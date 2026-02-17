@@ -1,7 +1,24 @@
+/**
+ * Clase que representa un triángulo equilátero.
+ * Hereda de PoligonoRegular ya que un triángulo equilátero es un polígono regular de 3 lados.
+ */
 public class TrianguloEquilatero extends PoligonoRegular {
+    
+    /**
+     * Número de lados de un triángulo (constante = 3).
+     */
     private static final int LADOS = 3;
+    
+    /**
+     * Tipo de figura (constante = "Triángulo equilátero").
+     */
     private static final String TIPOFIGURA = "Triángulo equilátero";
 
+    /**
+     * Constructor de la clase TrianguloEquilatero.
+     * 
+     * @param longitudLado Longitud del lado del triángulo equilátero
+     */
     public TrianguloEquilatero (double longitudLado) {
         super(LADOS, longitudLado, TIPOFIGURA);
     }

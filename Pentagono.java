@@ -1,10 +1,29 @@
+/**
+ * Clase que representa un pentágono regular.
+ * Hereda de PoligonoRegular ya que un pentágono es un polígono regular de 5 lados.
+ */
 public class Pentagono extends PoligonoRegular {
     
+    /**
+     * Número de lados de un pentágono (constante = 5).
+     */
     private static final int LADOS = 5;
+    
+    /**
+     * Tipo de figura (constante = "Pentagono").
+     */
     private static final String TIPOFIGURA = "Pentagono";
 
+    /**
+     * Valor de la constante PI.
+     */
     public double PI = 3.1416;
 
+    /**
+     * Constructor de la clase Pentagono.
+     * 
+     * @param longitudLado Longitud del lado del pentágono
+     */
     public Pentagono(double longitudLado) {
         super(LADOS, longitudLado, TIPOFIGURA);
     }

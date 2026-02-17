@@ -1,8 +1,24 @@
+/**
+ * Clase que representa un círculo.
+ * Implementa la interfaz Figura para calcular su área y perímetro.
+ */
 public class Circulo implements Figura {
     
+    /**
+     * Diámetro del círculo.
+     */
     public double diametro;
+    
+    /**
+     * Valor de la constante PI.
+     */
     public double PI = 3.1416;
 
+    /**
+     * Constructor de la clase Circulo.
+     * 
+     * @param diametro El diámetro del círculo
+     */
     public Circulo(double diametro) {
         this.diametro = diametro;
     }
@@ -31,6 +47,12 @@ public class Circulo implements Figura {
         return 2 * PI * (diametro/2);
     }
     
+    /**
+     * Devuelve una representación en cadena del círculo.
+     * Incluye el tipo de figura, su área y su perímetro.
+     * 
+     * @return Representación en String del círculo
+     */
     public String toString(){
         return "El tipo de figura es: Círculo" + 
         "\n Su área es: " + this.calcularArea() + 
